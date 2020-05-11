@@ -77,7 +77,3 @@ input {
   margin: 0px;
   font-size: : 20px;
 }
-
-.cpen211 button::selection {
-  color: red;
-}
