@@ -4,28 +4,41 @@
   <head>
     <title> Harmeeta Dahiya </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
 
   <body>
-    <table>
-      <tr>
-        <th><a href=".intro"> Intro </a></th>
-        <th><a href=".courses"> Courses </a> </th>
-        <th><a href=".projects"> Projects </a> </th>
-        <th><a href="personal.html"> Personal</a> </th>
-      </tr>
-    </table>
-      <img src = "scenery.jpg">
-      <h2> Introduction </h2>
+    <div class="row" >
+      <div class="col-lg-3">
+        <a class="btn btn-primary btn-lg" style="background-color:#8560c4;width:100%;margin:0px" href="#intro" role="button">Introduction</a>
+      </div>
+      <div class="col-lg-3">
+        <a class="btn btn-primary btn-lg" style="background-color:#8560c4;width:100%;margin:0px" href="#courses" role="button">Courses </a>
+      </div>
+      <div class="col-lg-3">
+        <a class="btn btn-primary btn-lg" style="background-color:#8560c4;width:100%;margin:0px" href="#projects" role="button">Projects </a>
+      </div>
+      <div class="col-lg-3">
+        <a class="btn btn-primary btn-lg" style="background-color:#8560c4;width:100%;margin:0px" href="personal.html" role="button">Personal</a>
+      </div>
+    </div>
 
-      <p class="intro">
+    <div class="alert alert-primary" role="alert">
+      This page is still under construction!
+    </div>
+
+      <img src = "scenery.jpg">
+      <h2 class = "text-light"> Introduction </h2>
+
+
+      <p id="intro">
         Harmeeta Dahiya is a Computer Engineering Student at The University of
-      British Columbia.
+      British Columbia. She was born and brought up in northern part of India.
       </p>
 
-      <h2> Courses Completed </h2>
+      <h2 class = "text-light"> Courses Completed </h2>
 
-      <div class="courses">
+      <div id="courses">
            <button id="cpen211"> CPEN 211 </button>
            <button id="cpen221"> CPEN 221 </button>
            <button id="cpsc221"> CPSC 221 </button>
@@ -40,7 +53,7 @@
            <button id="eng"> ENG 112 </button>
        </div>
 
-       <h2 class="projects"> Project Experience </h2>
+       <h2 class = "text-light" id="projects"> Project Experience </h2>
 
        <ul>
          <li> Kamino Game </li>
@@ -49,6 +62,10 @@
          <li> Sound Wave Manipulation </li>
          <li> Weather Monitoring System </li>
        </ul>
+
+       <form action="personal.html">
+       <input class="center_form" type="submit" value="Next page" />
+       </form>
 
   </body>
 
